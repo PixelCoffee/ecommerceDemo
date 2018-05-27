@@ -12,6 +12,14 @@ $fontGrayB: rgb(200,200,200);
 $blockGrayA: rgb(250,250,250);
 $blockGrayB: rgb(100,100,100);
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @import '_ecommerceNaV';
 
 body{
@@ -28,7 +36,7 @@ body{
         margin: auto;
     }
     
-    p{
+    h2{
         display: inline-block;
         margin: 1vw 2vw;   
         text-align: center;
@@ -40,6 +48,7 @@ body{
 }
 
 #main2{   
+    height: 56.3vw;
     p{
         position: relative;
         top: -50vw;
@@ -67,11 +76,44 @@ body{
         &:hover{
             color: black;
             border-color: black;
-            background-color: white;            
+            background-color: white;  
+            cursor:pointer;
         }
     }
-    
-    
 }
+
+#brands{
+    padding: 3vw;
+    background-color: white;
+    h3{
+        text-align: center;
+        font-family: $fontStackA;
+        font-weight: bold;
+        margin-bottom: 1.5vw;
+    }
+    p{
+        display: block;
+        color: black;
+        margin-top: 1.5vw;
+        margin-bottom: 0.2vw;     
+        text-align: center;
+        font-family: $fontStackB;
+        font-size: 1vw;        
+    }
+    col-md-2{
+        padding: auto;
+        align-content: center;
+    }
+    
+    img{        
+        width: 10.4vw;    
+        @include vertical-align();   
+    }
+    
+    #logos{
+        background-color: white;
+    }
+}
+    
 
 

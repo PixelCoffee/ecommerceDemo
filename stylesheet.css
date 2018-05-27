@@ -60,7 +60,7 @@ body {
   #main1 img {
     display: block;
     margin: auto; }
-  #main1 p {
+  #main1 h2 {
     display: inline-block;
     margin: 1vw 2vw;
     text-align: center;
@@ -69,32 +69,64 @@ body {
     font-size: 1.6vw;
     color: black; }
 
-#main2 p {
-  position: relative;
-  top: -50vw;
-  left: 10vw;
-  padding: 0.7vw;
-  width: 28vw;
-  background-color: white;
-  text-align: left;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 1.4vw;
-  color: black; }
-#main2 #shop {
-  position: relative;
-  top: -48vw;
-  left: 10vw;
-  padding: 0.3vw 1vw;
-  border: 0.1vw solid white;
-  background-color: #646464;
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 1.4vw; }
-  #main2 #shop:hover {
+#main2 {
+  height: 56.3vw; }
+  #main2 p {
+    position: relative;
+    top: -50vw;
+    left: 10vw;
+    padding: 0.7vw;
+    width: 28vw;
+    background-color: white;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.4vw;
+    color: black; }
+  #main2 #shop {
+    position: relative;
+    top: -48vw;
+    left: 10vw;
+    padding: 0.3vw 1vw;
+    border: 0.1vw solid white;
+    background-color: #646464;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.4vw; }
+    #main2 #shop:hover {
+      color: black;
+      border-color: black;
+      background-color: white;
+      cursor: pointer; }
+
+#brands {
+  padding: 3vw;
+  background-color: white; }
+  #brands h3 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.5vw; }
+  #brands p {
+    display: block;
     color: black;
-    border-color: black;
+    margin-top: 1.5vw;
+    margin-bottom: 0.2vw;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw; }
+  #brands col-md-2 {
+    padding: auto;
+    align-content: center; }
+  #brands img {
+    width: 10.4vw;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #brands #logos {
     background-color: white; }
 
 /*# sourceMappingURL=stylesheet.css.map */

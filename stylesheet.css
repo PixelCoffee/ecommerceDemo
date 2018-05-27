@@ -20,7 +20,7 @@
       font-weight: bold; }
   .navbar .col-md-3 a {
     display: inline-block;
-    margin-left: 1.5vw;
+    margin-left: 1.4vw;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2vw; }
   .navbar a, .navbar a:link, .navbar a:active, .navbar a:visited {
@@ -32,7 +32,7 @@
   .navbar h1 {
     display: inline-block;
     margin: 1vw 2vw;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2.2vw;
     color: black; }
   .navbar col-md-6 a {
@@ -45,5 +45,22 @@
   .navbar #rightNav a {
     margin: 4vw 1.5vw;
     margin-bottom: 0vw; }
+
+body {
+  overflow-x: hidden; }
+
+.main1 {
+  padding: 3vw 0vw; }
+  .main1 img {
+    display: block;
+    margin: auto; }
+  .main1 p {
+    display: inline-block;
+    margin: 1vw 2vw;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.6vw;
+    color: black; }
 
 /*# sourceMappingURL=stylesheet.css.map */

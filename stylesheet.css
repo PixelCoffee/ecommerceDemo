@@ -9,24 +9,41 @@
     width: 100%; }
   .navbar #row1 {
     background-color: black; }
+    .navbar #row1 p {
+      display: block;
+      color: white;
+      margin-top: 0.1vw;
+      margin-bottom: 0.2vw;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 0.8vw;
+      font-weight: bold; }
+  .navbar .col-md-3 a {
+    display: inline-block;
+    margin-left: 1.5vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2vw; }
   .navbar a, .navbar a:link, .navbar a:active, .navbar a:visited {
     text-decoration: none;
     color: black; }
   .navbar a:hover {
     text-decoration: none;
-    color: #e6e6e6; }
-  .navbar p {
-    margin-top: 0.1vw;
-    margin-bottom: 0.2vw;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 0.8vw;
-    font-weight: bold;
-    color: white; }
+    color: #c8c8c8; }
   .navbar h1 {
+    display: inline-block;
     margin: 1vw 2vw;
     font-family: "Oswald", sans-serif;
     font-size: 2.2vw;
     color: black; }
+  .navbar col-md-6 a {
+    display: block;
+    margin: auto; }
+  .navbar img {
+    display: block;
+    width: 5vw;
+    margin: 1vw auto; }
+  .navbar #rightNav a {
+    margin: 4vw 1.5vw;
+    margin-bottom: 0vw; }
 
 /*# sourceMappingURL=stylesheet.css.map */

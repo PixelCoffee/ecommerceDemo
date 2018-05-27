@@ -1,6 +1,6 @@
 .navbar{    
     width: 100vw;    
-    padding :0vw;
+    padding: 0vw;
     
     .container-fluid{
         background-color: white;
@@ -13,34 +13,64 @@
     }        
     
     #row1{
-         background-color: black;
+        background-color: black;
+        p{
+            display: block;
+            color: white;
+            margin-top: 0.1vw;
+            margin-bottom: 0.2vw;     
+            text-align: center;
+            font-family: $fontStackA;
+            font-size: 0.8vw;
+            font-weight: bold;
+        }
+    }
+    
+    .col-md-3{           
+        a{  
+        display: inline-block;    
+        margin-left: 1.5vw;                     
+        font-family: $fontStackB;
+        font-size: 1.2vw;              
+        }
     }
             
     $a-links:'a, a:link, a:active, a:visited';
     #{$a-links}{
         text-decoration: none;
-        color: black;
+        color: black;        
     }   
        
     a:hover{
         text-decoration: none;
-        color: $fontGrayA;
-    }
-    
-    p{  
-        margin-top: 0.1vw;
-        margin-bottom: 0.2vw;        
-        text-align: center;
-        font-family: $fontStackA;
-        font-size: 0.8vw;
-        font-weight: bold;
-        color: white;
-    }
+        color: $fontGrayB;
+    }  
     
     h1{
+        display: inline-block;
         margin: 1vw 2vw;        
         font-family: $fontStackA;
         font-size: 2.2vw;
         color: black;
+    }
+    
+    col-md-6{
+        a{
+            display: block;
+            margin: auto;
+        }
+    }
+    
+    img{
+        display: block;
+        width: 5vw;
+        margin: 1vw auto;
+    }
+    
+    #rightNav{
+        a{
+            margin: 4vw 1.5vw; 
+            margin-bottom: 0vw;
+        }
     }
 }

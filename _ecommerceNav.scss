@@ -1,6 +1,9 @@
 .navbar{    
-    width: 100vw;    
+    position: fixed;
+    width: 100vw;   
+    top: 0vw;   
     padding: 0vw;
+    z-index: 3;
     
     .container-fluid{
         background-color: white;
@@ -64,7 +67,8 @@
     img{
         display: block;
         width: 5vw;
-        margin: 1vw auto;
+        margin: auto;
+        margin-top: 1vw;
     }
     
     #rightNav{

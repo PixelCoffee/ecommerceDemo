@@ -1,6 +1,9 @@
 .navbar {
+  position: fixed;
   width: 100vw;
-  padding: 0vw; }
+  top: 0vw;
+  padding: 0vw;
+  z-index: 3; }
   .navbar .container-fluid {
     background-color: white;
     padding: 0vw; }
@@ -41,7 +44,8 @@
   .navbar img {
     display: block;
     width: 5vw;
-    margin: 1vw auto; }
+    margin: auto;
+    margin-top: 1vw; }
   .navbar #rightNav a {
     margin: 4vw 1.5vw;
     margin-bottom: 0vw; }
@@ -49,12 +53,14 @@
 body {
   overflow-x: hidden; }
 
-.main1 {
-  padding: 3vw 0vw; }
-  .main1 img {
+#main1 {
+  margin-top: 7.35vw;
+  padding: 3vw 0vw;
+  background-color: #fafafa; }
+  #main1 img {
     display: block;
     margin: auto; }
-  .main1 p {
+  #main1 p {
     display: inline-block;
     margin: 1vw 2vw;
     text-align: center;
@@ -62,5 +68,33 @@ body {
     font-weight: bold;
     font-size: 1.6vw;
     color: black; }
+
+#main2 p {
+  position: relative;
+  top: -50vw;
+  left: 10vw;
+  padding: 0.7vw;
+  width: 28vw;
+  background-color: white;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.4vw;
+  color: black; }
+#main2 #shop {
+  position: relative;
+  top: -48vw;
+  left: 10vw;
+  padding: 0.3vw 1vw;
+  border: 0.1vw solid white;
+  background-color: #646464;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.4vw; }
+  #main2 #shop:hover {
+    color: black;
+    border-color: black;
+    background-color: white; }
 
 /*# sourceMappingURL=stylesheet.css.map */

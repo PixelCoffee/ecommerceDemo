@@ -10,7 +10,7 @@ $fontStackB: 'Open Sans', sans-serif;
 $fontGrayA: rgb(230,230,230);
 $fontGrayB: rgb(200,200,200);
 $blockGrayA: rgb(250,250,250);
-$blockGrayB: rgb(100,100,100);
+$blockGrayB: rgb(120,120,120);
 
 @mixin vertical-align($position: relative) {
   position: $position;
@@ -118,5 +118,20 @@ body{
 #main3{
     padding: 5vw 0vw;
     background-color: $blockGrayB;
+    
+    h2{
+        text-align: center;
+        margin-bottom: 2vw;
+        padding: 0.5vw 0vw;
+        color: white;
+        background-color: black;
+        border: 0.2vw solid white;
+        border-radius: 0.5vw;
+    }
+}
+
+#splashCarousel{
+    border: 0.3vw solid white;
+    border-radius: 0.5vw;
 }
 

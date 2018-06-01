@@ -89,7 +89,7 @@ body {
     left: 10vw;
     padding: 0.3vw 1vw;
     border: 0.1vw solid white;
-    background-color: #646464;
+    background-color: #787878;
     color: white;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
@@ -131,6 +131,18 @@ body {
 
 #main3 {
   padding: 5vw 0vw;
-  background-color: #646464; }
+  background-color: #787878; }
+  #main3 h2 {
+    text-align: center;
+    margin-bottom: 2vw;
+    padding: 0.5vw 0vw;
+    color: white;
+    background-color: black;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw; }
+
+#splashCarousel {
+  border: 0.3vw solid white;
+  border-radius: 0.5vw; }
 
 /*# sourceMappingURL=stylesheet.css.map */

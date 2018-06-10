@@ -50,6 +50,53 @@
     margin: 4vw 1.5vw;
     margin-bottom: 0vw; }
 
+footer {
+  padding: 2vw 0vw; }
+  footer img {
+    display: block;
+    width: 5vw;
+    margin: auto; }
+  footer #logoText {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw; }
+  footer h2 {
+    font-size: 1.3vw;
+    font-family: "Oswald", sans-serif; }
+  footer p {
+    display: block;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw; }
+  footer a, footer a:link, footer a:active, footer a:visited {
+    text-decoration: none;
+    color: black; }
+  footer a:hover {
+    text-decoration: none;
+    color: #c8c8c8; }
+  footer #socialMedia img {
+    display: inline-block;
+    width: 3vw;
+    margin-left: 0.3vw;
+    margin-top: 0.2vw; }
+  footer #line {
+    height: 0.1vw;
+    width: 90vw;
+    margin: auto;
+    margin-top: 2vw;
+    background-color: #787878; }
+  footer .footnote {
+    display: inline-block;
+    margin: 1vw 5vw;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.7vw; }
+  footer #footnote2 {
+    float: right; }
+
 body {
   overflow-x: hidden; }
 
@@ -138,7 +185,7 @@ body {
     padding: 0.5vw 0vw;
     color: white;
     background-color: black;
-    border: 0.2vw solid white;
+    border: 0.1vw solid white;
     border-radius: 0.5vw; }
 
 #splashCarousel {

@@ -21,6 +21,7 @@ $blockGrayB: rgb(120,120,120);
 }
 
 @import '_ecommerceNaV';
+@import '_ecommerceFooter';
 
 body{
     overflow-x: hidden;
@@ -125,7 +126,7 @@ body{
         padding: 0.5vw 0vw;
         color: white;
         background-color: black;
-        border: 0.2vw solid white;
+        border: 0.1vw solid white;
         border-radius: 0.5vw;
     }
 }

@@ -1,0 +1,72 @@
+footer{
+    padding: 2vw 0vw;
+    
+    img{
+        display: block;
+        width: 5vw;
+        margin: auto;
+        
+    }
+    
+    #logoText{
+        display: block;
+        margin: auto;        
+        text-align: center;
+        font-weight: bold;
+        font-family: $fontStackB;
+        font-size: 1vw;
+    }
+    
+    h2{
+        font-size: 1.3vw;
+        font-family: $fontStackA;
+    }
+    
+    p{
+        display: block;
+        margin: auto;        
+        font-family: $fontStackB;
+        font-size: 1vw;
+    }
+    
+    $a-links:'a, a:link, a:active, a:visited';
+    #{$a-links}{
+        text-decoration: none;
+        color: black;        
+    }   
+       
+    a:hover{
+        text-decoration: none;
+        color: $fontGrayB;
+    }  
+    
+    #socialMedia{
+        img{
+            display: inline-block;
+            width: 3vw;
+            margin-left: 0.3vw;
+            margin-top: 0.2vw;
+        }
+    }
+    
+    #line{
+        height: 0.1vw;
+        width: 90vw;
+        margin: auto;
+        margin-top: 2vw;
+        background-color: $blockGrayB;
+    }
+    
+    .footnote{
+        display: inline-block;
+        margin: 1vw 5vw; 
+        float: left;
+        font-family: $fontStackA;
+        font-size: 0.7vw;
+    }
+    
+    #footnote2{        
+        float: right;
+        
+    }
+}

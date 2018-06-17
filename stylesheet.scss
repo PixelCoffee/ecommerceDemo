@@ -235,15 +235,15 @@ body{
     
 #main3{
     padding: 5vw 0vw;
-    background-color: $blockGrayB;
+    background: linear-gradient(to bottom right, gray, white);
     
     h2{
         text-align: center;
         margin-bottom: 2vw;
         padding: 0.5vw 0vw;
         color: white;
-        background-color: black;
-        border: 0.1vw solid white;
+        background-color: rgba(100,100,100, 0.8);
+        border: 0.2vw solid white;
         border-radius: 0.5vw;
         
         @include sm{
@@ -266,5 +266,9 @@ body{
 #splashCarousel{
     border: 0.3vw solid white;
     border-radius: 0.5vw;
+}
+
+#grayGradientA {
+  background: linear-gradient(to bottom right, white, $blockGrayA);
 }
 

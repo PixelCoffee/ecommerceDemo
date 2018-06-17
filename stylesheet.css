@@ -298,6 +298,18 @@ body {
     background-color: black;
     border: 0.1vw solid white;
     border-radius: 0.5vw; }
+    @media (min-width: 320px) {
+      #main3 h2 {
+        font-size: 3.5vw;
+        padding: 0.8vw 0vw; } }
+    @media (min-width: 768px) {
+      #main3 h2 {
+        font-size: 2.5vw;
+        padding: 0.8vw 2vw; } }
+    @media (min-width: 992px) {
+      #main3 h2 {
+        font-size: 1.5vw;
+        padding: 0.8vw 0vw; } }
 
 #splashCarousel {
   border: 0.3vw solid white;

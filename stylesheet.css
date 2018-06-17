@@ -234,26 +234,56 @@ body {
   #brands h3 {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    margin-bottom: 1.5vw; }
+    font-weight: bold; }
+    @media (min-width: 320px) {
+      #brands h3 {
+        font-size: 3vw;
+        margin-bottom: 5vw; } }
+    @media (min-width: 768px) {
+      #brands h3 {
+        font-size: 2vw;
+        margin-bottom: 1.5vw; } }
+    @media (min-width: 992px) {
+      #brands h3 {
+        font-size: auto; } }
   #brands p {
     display: block;
     color: black;
     margin-top: 1.5vw;
     margin-bottom: 0.2vw;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw; }
+    font-family: "Open Sans", sans-serif; }
+    @media (min-width: 320px) {
+      #brands p {
+        font-size: 3vw; } }
+    @media (min-width: 768px) {
+      #brands p {
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #brands p {
+        font-size: 1vw; } }
   #brands col-md-2 {
     padding: auto;
     align-content: center; }
-  #brands img {
-    width: 10.4vw;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+  @media (min-width: 320px) {
+    #brands img {
+      padding: 3vw 0vw;
+      width: 40%;
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
+  @media (min-width: 768px) {
+    #brands img {
+      width: 10.4vw;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
   #brands #logos {
     background-color: white; }
 

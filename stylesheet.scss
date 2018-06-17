@@ -20,6 +20,15 @@ $blockGrayB: rgb(120,120,120);
   transform: translateY(-50%);
 }
 
+@mixin both-align(){
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 @mixin sm{
     @media (min-width: #{$screen-sm-min}) {
         @content;
@@ -167,18 +176,38 @@ body{
     h3{
         text-align: center;
         font-family: $fontStackA;
-        font-weight: bold;
-        margin-bottom: 1.5vw;
+        font-weight: bold;        
+        
+        @include sm{
+            font-size: 3vw;
+            margin-bottom: 5vw;
+        }
+        @include md{
+            font-size: 2vw;
+            margin-bottom: 1.5vw;
+        }
+        @include lg{
+            font-size: auto;
+        }
     }
     
     p{
         display: block;
         color: black;
-        margin-top: 1.5vw;
-        margin-bottom: 0.2vw;     
+        margin-top: 1.5vw;   
+        margin-bottom: 0.2vw;
         text-align: center;
         font-family: $fontStackB;
-        font-size: 1vw;        
+         @include sm{
+            font-size: 3vw;
+        }
+        @include md{
+            font-size: 2vw;
+        }
+        @include lg{
+            font-size: 1vw; 
+        }
+                 
     }
     
     col-md-2{
@@ -187,8 +216,16 @@ body{
     }
     
     img{        
-        width: 10.4vw;    
-        @include vertical-align();   
+        @include sm{
+            padding: 3vw 0vw;
+            width: 40%;
+            display: block;
+            @include both-align();  
+        }
+        @include md{
+            width: 10.4vw;  
+            @include vertical-align();  
+        }        
     }
     
     #logos{

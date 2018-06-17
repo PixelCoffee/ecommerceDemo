@@ -143,7 +143,7 @@ body {
   #main1 img {
     display: block;
     margin: auto;
-    width: 100vw; }
+    width: 100%; }
   #main1 h2 {
     display: inline-block;
     margin: 1vw 2vw;
@@ -163,34 +163,70 @@ body {
 
 #main2 {
   height: 56.3vw; }
+  #main2 img {
+    width: 100%; }
   #main2 p {
-    position: relative;
-    top: -50vw;
-    left: 10vw;
-    padding: 0.7vw;
-    width: 28vw;
-    background-color: white;
-    text-align: left;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 1.4vw;
     color: black; }
+    @media (min-width: 320px) {
+      #main2 p {
+        width: 50vw;
+        position: relative;
+        top: -50vw;
+        left: 25vw;
+        padding: 0.7vw;
+        font-size: 4vw;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); } }
+    @media (min-width: 768px) {
+      #main2 p {
+        width: 40vw;
+        position: relative;
+        top: -50vw;
+        left: 10vw;
+        padding: 0.7vw;
+        font-size: 2vw;
+        text-align: left;
+        background-color: white; } }
+    @media (min-width: 992px) {
+      #main2 p {
+        width: 28vw;
+        position: relative;
+        top: -50vw;
+        left: 10vw;
+        padding: 0.7vw;
+        font-size: 1.4vw;
+        text-align: left;
+        background-color: white; } }
   #main2 #shop {
     position: relative;
     top: -48vw;
-    left: 10vw;
     padding: 0.3vw 1vw;
     border: 0.1vw solid white;
     background-color: #787878;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    font-size: 1.4vw; }
+    font-weight: bold; }
     #main2 #shop:hover {
       color: black;
       border-color: black;
       background-color: white;
       cursor: pointer; }
+    @media (min-width: 320px) {
+      #main2 #shop {
+        left: 33%;
+        width: 33%;
+        font-size: 4vw; } }
+    @media (min-width: 768px) {
+      #main2 #shop {
+        left: 10vw;
+        width: auto;
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #main2 #shop {
+        left: 10vw;
+        font-size: 1.4vw; } }
 
 #brands {
   padding: 3vw;

@@ -59,7 +59,7 @@ body{
     img{
         display: block;
         margin: auto;
-        width: 100vw;
+        width: 100%;            
     }
     
     h2{
@@ -84,48 +84,93 @@ body{
 
 #main2{   
     height: 56.3vw;
-    p{
-        position: relative;
-        top: -50vw;
-        left: 10vw;
-        padding: 0.7vw;  
-        width: 28vw;
-        background-color: white;
-        text-align: left;
-        font-family: $fontStackA;
-        font-weight: bold;
-        font-size: 1.4vw;
-        color: black;
+    
+    img{
+        width: 100%;
     }
+    
+    p{        
+        font-family: $fontStackA;
+        font-weight: bold;        
+        color: black;
+        
+        @include sm{
+            width: 50vw;
+            position: relative;
+            top: -50vw;
+            left: 25vw;
+            padding: 0.7vw;
+            font-size: 4vw;
+            text-align: center;
+            background-color: rgba(255,255,255,0.8);
+        }
+        @include md{
+            width: 40vw;            
+            position: relative;
+            top: -50vw;
+            left: 10vw;
+            padding: 0.7vw;
+            font-size: 2vw;
+            text-align: left;
+            background-color: white;
+        }
+        @include lg{
+            width: 28vw;
+            position: relative;
+            top: -50vw;
+            left: 10vw;
+            padding: 0.7vw;
+            font-size: 1.4vw;
+            text-align: left;
+            background-color: white;
+        }
+    }
+    
     #shop{
         position: relative;
         top: -48vw;
-        left: 10vw;
         padding: 0.3vw 1vw;
         border: 0.1vw solid white;
         background-color: $blockGrayB;
         color: white;
         font-family: $fontStackA;
         font-weight: bold;
-        font-size: 1.4vw;
+        
         &:hover{
             color: black;
             border-color: black;
             background-color: white;  
-            cursor:pointer;
+            cursor: pointer;
         }
+        
+        @include sm{
+            left: 33%;
+            width: 33%;
+            font-size: 4vw;
+        }
+        @include md{
+            left: 10vw;
+            width: auto;
+            font-size: 2vw;
+        }
+        @include lg{
+            left: 10vw;
+            font-size: 1.4vw;
+        }        
     }
 }
 
 #brands{
     padding: 3vw;
     background-color: white;
+    
     h3{
         text-align: center;
         font-family: $fontStackA;
         font-weight: bold;
         margin-bottom: 1.5vw;
     }
+    
     p{
         display: block;
         color: black;
@@ -135,6 +180,7 @@ body{
         font-family: $fontStackB;
         font-size: 1vw;        
     }
+    
     col-md-2{
         padding: auto;
         align-content: center;

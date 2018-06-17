@@ -19,86 +19,286 @@
       margin-bottom: 0.2vw;
       text-align: center;
       font-family: "Oswald", sans-serif;
-      font-size: 0.8vw;
       font-weight: bold; }
-  .navbar .col-md-3 a {
+      @media (min-width: 320px) {
+        .navbar #row1 p {
+          font-size: 2vw; } }
+      @media (min-width: 768px) {
+        .navbar #row1 p {
+          font-size: 1.5vw; } }
+      @media (min-width: 992px) {
+        .navbar #row1 p {
+          font-size: 0.8vw; } }
+  .navbar #row2 .col-sm-2 a {
     display: inline-block;
-    margin-left: 1.4vw;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2vw; }
-  .navbar a, .navbar a:link, .navbar a:active, .navbar a:visited {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    font-family: "Open Sans", sans-serif; }
+    @media (min-width: 320px) {
+      .navbar #row2 .col-sm-2 a {
+        margin: auto;
+        padding: auto;
+        vertical-align: center;
+        font-size: 3vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%); } }
+    @media (min-width: 768px) {
+      .navbar #row2 .col-sm-2 a {
+        font-size: 1.8vw;
+        transform: translate(-100%, -50%); } }
+  .navbar #row2 a, .navbar #row2 a:link, .navbar #row2 a:active, .navbar #row2 a:visited {
     text-decoration: none;
     color: black; }
-  .navbar a:hover {
+  .navbar #row2 a:hover {
     text-decoration: none;
     color: #c8c8c8; }
-  .navbar h1 {
+  .navbar #row2 h1 {
     display: inline-block;
     margin: 1vw 2vw;
     font-family: "Open Sans", sans-serif;
-    font-size: 2.2vw;
     color: black; }
-  .navbar col-md-6 a {
+    @media (min-width: 320px) {
+      .navbar #row2 h1 {
+        font-size: 5vw; } }
+    @media (min-width: 768px) {
+      .navbar #row2 h1 {
+        font-size: 2.2vw; } }
+  .navbar #row2 col-md-6 a {
     display: block;
     margin: auto; }
-  .navbar img {
+  .navbar #row2 #logo {
+    display: block; }
+  .navbar #row2 img {
     display: block;
     width: 5vw;
     margin: auto;
     margin-top: 1vw; }
-  .navbar #rightNav a {
-    margin: 4vw 1.5vw;
-    margin-bottom: 0vw; }
+
+@media (min-width: 320px) {
+  footer .col-sm-6 {
+    margin-top: 10vw; } }
+@media (min-width: 768px) {
+  footer .col-sm-6 {
+    margin-top: 5vw; } }
+footer img {
+  display: block;
+  margin: auto;
+  width: 35%; }
+footer #logoText {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif; }
+  @media (min-width: 320px) {
+    footer #logoText {
+      font-size: 4vw; } }
+  @media (min-width: 768px) {
+    footer #logoText {
+      font-size: 2.5vw; } }
+  @media (min-width: 992px) {
+    footer #logoText {
+      font-size: 2vw; } }
+footer h2 {
+  font-family: "Oswald", sans-serif; }
+  @media (min-width: 320px) {
+    footer h2 {
+      font-size: 4vw;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer h2 {
+      font-size: 2.5vw;
+      text-align: left; } }
+  @media (min-width: 992px) {
+    footer h2 {
+      font-size: 2vw; } }
+footer p {
+  display: block;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.6vw; }
+  @media (min-width: 320px) {
+    footer p {
+      font-size: 3vw;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer p {
+      font-size: 1.5vw;
+      text-align: left; } }
+  @media (min-width: 992px) {
+    footer p {
+      font-size: 1.2vw;
+      text-align: left; } }
+footer a, footer a:link, footer a:active, footer a:visited {
+  text-decoration: none;
+  color: black; }
+footer a:hover {
+  text-decoration: none;
+  color: #c8c8c8; }
+footer #socialMedia {
+  align-content: center; }
+  footer #socialMedia img {
+    display: inline-block; }
+    @media (min-width: 320px) {
+      footer #socialMedia img {
+        width: 30%;
+        margin: auto; } }
+    @media (min-width: 768px) {
+      footer #socialMedia img {
+        width: 25%;
+        margin-left: 0.3vw;
+        margin-top: 0.2vw; } }
+    @media (min-width: 992px) {
+      footer #socialMedia img {
+        width: 20%; } }
+footer #line {
+  height: 0.2vw;
+  width: 90vw;
+  margin: auto;
+  background-color: #787878; }
+  @media (min-width: 320px) {
+    footer #line {
+      margin-top: 5vw; } }
+  @media (min-width: 768px) {
+    footer #line {
+      margin-top: 0.5vw; } }
+  @media (min-width: 992px) {
+    footer #line {
+      margin-top: 2vw; } }
+footer .footnote {
+  font-family: "Oswald", sans-serif; }
+  @media (min-width: 320px) {
+    footer .footnote {
+      margin: 3vw 5vw;
+      display: block;
+      font-size: 3vw;
+      float: none;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer .footnote {
+      margin: 1vw 5vw;
+      display: inline-block;
+      font-size: 1.5vw;
+      float: left; } }
+  @media (min-width: 992px) {
+    footer .footnote {
+      font-size: 0.7vw; } }
+@media (min-width: 320px) {
+  footer #footnote2 {
+    display: block;
+    float: none;
+    text-align: center; } }
+@media (min-width: 768px) {
+  footer #footnote2 {
+    display: inline-block;
+    float: right; } }
 
 body {
   overflow-x: hidden; }
 
 #main1 {
-  margin-top: 7.35vw;
   padding: 3vw 0vw;
   background-color: #fafafa; }
+  @media (min-width: 320px) {
+    #main1 {
+      margin-top: 15vw; } }
+  @media (min-width: 768px) {
+    #main1 {
+      margin-top: 7.35vw; } }
+  @media (min-width: 992px) {
+    #main1 {
+      margin-top: 7.35vw; } }
   #main1 img {
     display: block;
-    margin: auto; }
+    margin: auto;
+    width: 100%; }
   #main1 h2 {
     display: inline-block;
     margin: 1vw 2vw;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 1.6vw;
     color: black; }
+    @media (min-width: 320px) {
+      #main1 h2 {
+        font-size: 3vw; } }
+    @media (min-width: 768px) {
+      #main1 h2 {
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #main1 h2 {
+        font-size: 1.6vw; } }
 
 #main2 {
   height: 56.3vw; }
+  #main2 img {
+    width: 100%; }
   #main2 p {
-    position: relative;
-    top: -50vw;
-    left: 10vw;
-    padding: 0.7vw;
-    width: 28vw;
-    background-color: white;
-    text-align: left;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 1.4vw;
     color: black; }
+    @media (min-width: 320px) {
+      #main2 p {
+        width: 50vw;
+        position: relative;
+        top: -50vw;
+        left: 25vw;
+        padding: 0.7vw;
+        font-size: 4vw;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); } }
+    @media (min-width: 768px) {
+      #main2 p {
+        width: 40vw;
+        position: relative;
+        top: -50vw;
+        left: 10vw;
+        padding: 0.7vw;
+        font-size: 2vw;
+        text-align: left;
+        background-color: white; } }
+    @media (min-width: 992px) {
+      #main2 p {
+        width: 28vw;
+        position: relative;
+        top: -50vw;
+        left: 10vw;
+        padding: 0.7vw;
+        font-size: 1.4vw;
+        text-align: left;
+        background-color: white; } }
   #main2 #shop {
     position: relative;
     top: -48vw;
-    left: 10vw;
     padding: 0.3vw 1vw;
     border: 0.1vw solid white;
     background-color: #787878;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    font-size: 1.4vw; }
+    font-weight: bold; }
     #main2 #shop:hover {
       color: black;
       border-color: black;
       background-color: white;
       cursor: pointer; }
+    @media (min-width: 320px) {
+      #main2 #shop {
+        left: 33%;
+        width: 33%;
+        font-size: 4vw; } }
+    @media (min-width: 768px) {
+      #main2 #shop {
+        left: 10vw;
+        width: auto;
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #main2 #shop {
+        left: 10vw;
+        font-size: 1.4vw; } }
 
 #brands {
   padding: 3vw;
@@ -106,26 +306,56 @@ body {
   #brands h3 {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    margin-bottom: 1.5vw; }
+    font-weight: bold; }
+    @media (min-width: 320px) {
+      #brands h3 {
+        font-size: 3vw;
+        margin-bottom: 5vw; } }
+    @media (min-width: 768px) {
+      #brands h3 {
+        font-size: 2vw;
+        margin-bottom: 1.5vw; } }
+    @media (min-width: 992px) {
+      #brands h3 {
+        font-size: auto; } }
   #brands p {
     display: block;
     color: black;
     margin-top: 1.5vw;
     margin-bottom: 0.2vw;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw; }
+    font-family: "Open Sans", sans-serif; }
+    @media (min-width: 320px) {
+      #brands p {
+        font-size: 3vw; } }
+    @media (min-width: 768px) {
+      #brands p {
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #brands p {
+        font-size: 1vw; } }
   #brands col-md-2 {
     padding: auto;
     align-content: center; }
-  #brands img {
-    width: 10.4vw;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+  @media (min-width: 320px) {
+    #brands img {
+      padding: 3vw 0vw;
+      width: 40%;
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
+  @media (min-width: 768px) {
+    #brands img {
+      width: 10.4vw;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
   #brands #logos {
     background-color: white; }
 
@@ -138,8 +368,20 @@ body {
     padding: 0.5vw 0vw;
     color: white;
     background-color: rgba(100, 100, 100, 0.8);
-    border: 0.2vw solid white;
+    border: 0.2vw solid white;    
     border-radius: 0.5vw; }
+    @media (min-width: 320px) {
+      #main3 h2 {
+        font-size: 3.5vw;
+        padding: 0.8vw 0vw; } }
+    @media (min-width: 768px) {
+      #main3 h2 {
+        font-size: 2.5vw;
+        padding: 0.8vw 2vw; } }
+    @media (min-width: 992px) {
+      #main3 h2 {
+        font-size: 1.5vw;
+        padding: 0.8vw 0vw; } }
 
 #splashCarousel {
   border: 0.3vw solid white;

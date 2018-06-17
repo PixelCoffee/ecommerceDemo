@@ -20,6 +20,22 @@ $blockGrayB: rgb(120,120,120);
   transform: translateY(-50%);
 }
 
+@mixin sm{
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+@mixin md{
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+@mixin lg{
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
 @import '_ecommerceNaV';
 @import '_ecommerceFooter';
 
@@ -28,13 +44,22 @@ body{
 }
 
 #main1{
-    margin-top: 7.35vw;
+    @include sm{
+        margin-top: 15vw;
+    }
+    @include md{
+        margin-top: 7.35vw;
+    }
+    @include lg{
+        margin-top: 7.35vw;
+    }
     padding: 3vw 0vw;
     background-color: $blockGrayA;
         
     img{
         display: block;
         margin: auto;
+        width: 100vw;
     }
     
     h2{
@@ -43,8 +68,17 @@ body{
         text-align: center;
         font-family: $fontStackA;
         font-weight: bold;
-        font-size: 1.6vw;
         color: black;
+        
+        @include sm{
+            font-size: 3vw;
+        }
+        @include md{
+            font-size: 2vw;
+        }
+        @include lg{
+            font-size: 1.6vw;
+        }
     }
 }
 

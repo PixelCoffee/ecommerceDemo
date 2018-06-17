@@ -19,36 +19,64 @@
       margin-bottom: 0.2vw;
       text-align: center;
       font-family: "Oswald", sans-serif;
-      font-size: 0.8vw;
       font-weight: bold; }
-  .navbar .col-md-3 a {
+      @media (min-width: 320px) {
+        .navbar #row1 p {
+          font-size: 2vw; } }
+      @media (min-width: 768px) {
+        .navbar #row1 p {
+          font-size: 1.5vw; } }
+      @media (min-width: 992px) {
+        .navbar #row1 p {
+          font-size: 0.8vw; } }
+  .navbar #row2 .col-sm-2 a {
     display: inline-block;
-    margin-left: 1.4vw;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2vw; }
-  .navbar a, .navbar a:link, .navbar a:active, .navbar a:visited {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    font-family: "Open Sans", sans-serif; }
+    @media (min-width: 320px) {
+      .navbar #row2 .col-sm-2 a {
+        margin: auto;
+        padding: auto;
+        vertical-align: center;
+        font-size: 3vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%); } }
+    @media (min-width: 768px) {
+      .navbar #row2 .col-sm-2 a {
+        font-size: 1.8vw;
+        transform: translate(-100%, -50%); } }
+  .navbar #row2 a, .navbar #row2 a:link, .navbar #row2 a:active, .navbar #row2 a:visited {
     text-decoration: none;
     color: black; }
-  .navbar a:hover {
+  .navbar #row2 a:hover {
     text-decoration: none;
     color: #c8c8c8; }
-  .navbar h1 {
+  .navbar #row2 h1 {
     display: inline-block;
     margin: 1vw 2vw;
     font-family: "Open Sans", sans-serif;
-    font-size: 2.2vw;
     color: black; }
-  .navbar col-md-6 a {
+    @media (min-width: 320px) {
+      .navbar #row2 h1 {
+        font-size: 5vw; } }
+    @media (min-width: 768px) {
+      .navbar #row2 h1 {
+        font-size: 2.2vw; } }
+  .navbar #row2 col-md-6 a {
     display: block;
     margin: auto; }
-  .navbar img {
+  .navbar #row2 #logo {
+    display: block; }
+  .navbar #row2 img {
     display: block;
     width: 5vw;
     margin: auto;
     margin-top: 1vw; }
-  .navbar #rightNav a {
-    margin: 4vw 1.5vw;
-    margin-bottom: 0vw; }
 
 footer {
   padding: 2vw 0vw; }
@@ -101,20 +129,37 @@ body {
   overflow-x: hidden; }
 
 #main1 {
-  margin-top: 7.35vw;
   padding: 3vw 0vw;
   background-color: #fafafa; }
+  @media (min-width: 320px) {
+    #main1 {
+      margin-top: 15vw; } }
+  @media (min-width: 768px) {
+    #main1 {
+      margin-top: 7.35vw; } }
+  @media (min-width: 992px) {
+    #main1 {
+      margin-top: 7.35vw; } }
   #main1 img {
     display: block;
-    margin: auto; }
+    margin: auto;
+    width: 100vw; }
   #main1 h2 {
     display: inline-block;
     margin: 1vw 2vw;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 1.6vw;
     color: black; }
+    @media (min-width: 320px) {
+      #main1 h2 {
+        font-size: 3vw; } }
+    @media (min-width: 768px) {
+      #main1 h2 {
+        font-size: 2vw; } }
+    @media (min-width: 992px) {
+      #main1 h2 {
+        font-size: 1.6vw; } }
 
 #main2 {
   height: 56.3vw; }

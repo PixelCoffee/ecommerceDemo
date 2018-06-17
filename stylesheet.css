@@ -78,52 +78,124 @@
     margin: auto;
     margin-top: 1vw; }
 
-footer {
-  padding: 2vw 0vw; }
-  footer img {
-    display: block;
-    width: 5vw;
-    margin: auto; }
-  footer #logoText {
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw; }
-  footer h2 {
-    font-size: 1.3vw;
-    font-family: "Oswald", sans-serif; }
-  footer p {
-    display: block;
-    margin: auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw; }
-  footer a, footer a:link, footer a:active, footer a:visited {
-    text-decoration: none;
-    color: black; }
-  footer a:hover {
-    text-decoration: none;
-    color: #c8c8c8; }
+@media (min-width: 320px) {
+  footer .col-sm-6 {
+    margin-top: 10vw; } }
+@media (min-width: 768px) {
+  footer .col-sm-6 {
+    margin-top: 5vw; } }
+footer img {
+  display: block;
+  margin: auto;
+  width: 35%; }
+footer #logoText {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif; }
+  @media (min-width: 320px) {
+    footer #logoText {
+      font-size: 4vw; } }
+  @media (min-width: 768px) {
+    footer #logoText {
+      font-size: 2.5vw; } }
+  @media (min-width: 992px) {
+    footer #logoText {
+      font-size: 2vw; } }
+footer h2 {
+  font-family: "Oswald", sans-serif; }
+  @media (min-width: 320px) {
+    footer h2 {
+      font-size: 4vw;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer h2 {
+      font-size: 2.5vw;
+      text-align: left; } }
+  @media (min-width: 992px) {
+    footer h2 {
+      font-size: 2vw; } }
+footer p {
+  display: block;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.6vw; }
+  @media (min-width: 320px) {
+    footer p {
+      font-size: 3vw;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer p {
+      font-size: 1.5vw;
+      text-align: left; } }
+  @media (min-width: 992px) {
+    footer p {
+      font-size: 1.2vw;
+      text-align: left; } }
+footer a, footer a:link, footer a:active, footer a:visited {
+  text-decoration: none;
+  color: black; }
+footer a:hover {
+  text-decoration: none;
+  color: #c8c8c8; }
+footer #socialMedia {
+  align-content: center; }
   footer #socialMedia img {
-    display: inline-block;
-    width: 3vw;
-    margin-left: 0.3vw;
-    margin-top: 0.2vw; }
-  footer #line {
-    height: 0.1vw;
-    width: 90vw;
-    margin: auto;
-    margin-top: 2vw;
-    background-color: #787878; }
-  footer .footnote {
-    display: inline-block;
-    margin: 1vw 5vw;
-    float: left;
-    font-family: "Oswald", sans-serif;
-    font-size: 0.7vw; }
+    display: inline-block; }
+    @media (min-width: 320px) {
+      footer #socialMedia img {
+        width: 30%;
+        margin: auto; } }
+    @media (min-width: 768px) {
+      footer #socialMedia img {
+        width: 25%;
+        margin-left: 0.3vw;
+        margin-top: 0.2vw; } }
+    @media (min-width: 992px) {
+      footer #socialMedia img {
+        width: 20%; } }
+footer #line {
+  height: 0.2vw;
+  width: 90vw;
+  margin: auto;
+  background-color: #787878; }
+  @media (min-width: 320px) {
+    footer #line {
+      margin-top: 5vw; } }
+  @media (min-width: 768px) {
+    footer #line {
+      margin-top: 0.5vw; } }
+  @media (min-width: 992px) {
+    footer #line {
+      margin-top: 2vw; } }
+footer .footnote {
+  font-family: "Oswald", sans-serif; }
+  @media (min-width: 320px) {
+    footer .footnote {
+      margin: 3vw 5vw;
+      display: block;
+      font-size: 3vw;
+      float: none;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    footer .footnote {
+      margin: 1vw 5vw;
+      display: inline-block;
+      font-size: 1.5vw;
+      float: left; } }
+  @media (min-width: 992px) {
+    footer .footnote {
+      font-size: 0.7vw; } }
+@media (min-width: 320px) {
   footer #footnote2 {
-    float: right; }
+    display: block;
+    float: none;
+    text-align: center; } }
+@media (min-width: 768px) {
+  footer #footnote2 {
+    display: inline-block;
+    float: right; } }
 
 body {
   overflow-x: hidden; }

@@ -1,11 +1,17 @@
-footer{
-    padding: 2vw 0vw;
+footer{    
+    .col-sm-6{
+        @include sm{
+            margin-top: 10vw;
+        }
+        @include md{
+            margin-top: 5vw;
+        }
+    }    
     
     img{
         display: block;
-        width: 5vw;
-        margin: auto;
-        
+        margin: auto;   
+        width: 35%;       
     }
     
     #logoText{
@@ -14,25 +20,58 @@ footer{
         text-align: center;
         font-weight: bold;
         font-family: $fontStackB;
-        font-size: 1vw;
+                
+        @include sm{
+            font-size: 4vw;                
+        }
+        @include md{
+            font-size: 2.5vw;                   
+        }
+         @include lg{
+            font-size: 2vw;
+        }
     }
     
-    h2{
-        font-size: 1.3vw;
+    h2{        
         font-family: $fontStackA;
+                
+        @include sm{
+            font-size: 4vw;    
+            text-align: center;
+        }
+        @include md{
+            font-size: 2.5vw;
+            text-align: left;        
+        }
+        @include lg{
+            font-size: 2vw;
+        }
     }
     
     p{
         display: block;
         margin: auto;        
         font-family: $fontStackB;
-        font-size: 1vw;
+        font-size: 2.6vw;
+        
+        @include sm{
+            font-size: 3vw;    
+            text-align: center;
+        }
+        @include md{
+            font-size: 1.5vw;
+            text-align: left;        
+        }
+        @include lg{
+            font-size: 1.2vw;
+            text-align: left;        
+        }
     }
     
     $a-links:'a, a:link, a:active, a:visited';
     #{$a-links}{
         text-decoration: none;
-        color: black;        
+        color: black;
     }   
        
     a:hover{
@@ -40,33 +79,73 @@ footer{
         color: $fontGrayB;
     }  
     
-    #socialMedia{
+    #socialMedia{        
+        align-content: center;
         img{
-            display: inline-block;
-            width: 3vw;
-            margin-left: 0.3vw;
-            margin-top: 0.2vw;
+            display: inline-block;           
+            
+            @include sm{
+                width: 30%;
+                margin: auto;                
+            }
+            @include md{
+                width: 25%;
+                margin-left: 0.3vw;
+                margin-top: 0.2vw;
+            }
+            @include lg{
+                width: 20%;                
+            }
         }
     }
     
     #line{
-        height: 0.1vw;
+        height: 0.2vw;
         width: 90vw;
-        margin: auto;
-        margin-top: 2vw;
+        margin: auto;        
         background-color: $blockGrayB;
+            
+        @include sm{
+            margin-top: 5vw;       
+        }
+        @include md{
+            margin-top: 0.5vw;       
+        }
+        @include lg{
+            margin-top: 2vw;       
+        }
     }
     
-    .footnote{
-        display: inline-block;
-        margin: 1vw 5vw; 
-        float: left;
-        font-family: $fontStackA;
-        font-size: 0.7vw;
-    }
-    
-    #footnote2{        
-        float: right;
+    .footnote{       
+        font-family: $fontStackA;        
         
+        @include sm{
+            margin: 3vw 5vw;   
+            display: block;
+            font-size: 3vw;
+            float: none;
+            text-align: center;
+        }
+        @include md{
+            margin: 1vw 5vw;   
+            display: inline-block;
+            font-size: 1.5vw;
+            float: left;
+        }
+        @include lg{
+            font-size: 0.7vw;
+        }
+    }
+    
+    #footnote2{           
+        @include sm{
+            display: block;
+            float: none;
+            text-align: center;
+        }
+        @include md{
+            display: inline-block;
+            float: right;
+        }
     }
 }

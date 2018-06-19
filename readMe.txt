@@ -1,5 +1,10 @@
-Demo Ecommerce / Shop website landing page utilising Bootstrap/SCSS/AJAX/Responsive Design/
+Demo Ecommerce / Shop website landing page utilising Bootstrap/SCSS/AJAX (bootstrap carousel)/Responsive Design/
 
+
+During this process I came to realise that formatting for mobile layouts post-hoc was rather detrimental, largely
+due to design clashes or considerations but also regarding some CSS mixin/breakpoint properties (that would not have been an
+issue had the site been engineered for mobile initially). This was circumvented with some slightly imperfect class groupings,
+dropping the SM class and merging styles for XS and SM.
 
 
 Image/Asset Source List:

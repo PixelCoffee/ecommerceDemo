@@ -1,5 +1,5 @@
 footer{    
-    .col-6{
+    .col-sm-6{
         @include xs{
             margin-top: 10vw;
         }
@@ -11,7 +11,13 @@ footer{
     img{
         display: block;
         margin: auto;   
-        width: 35%;       
+        
+        @include xs{
+            width: 25%;
+        }
+        @include md{
+            width: 35%;    
+        }
     }
     
     #logoText{
@@ -85,11 +91,13 @@ footer{
             display: inline-block;           
             
             @include xs{
-                width: 30%;
-                margin: auto;                
+                width: 20%;
+                margin: 0.2vw 40%;                
             }
+          
             @include md{
-                width: 25%;
+                width: 25%; 
+                margin: 0;
                 margin-left: 0.3vw;
                 margin-top: 0.2vw;
             }

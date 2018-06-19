@@ -79,15 +79,20 @@
     margin-top: 1vw; }
 
 @media (min-width: 0px) {
-  footer .col-6 {
+  footer .col-sm-6 {
     margin-top: 10vw; } }
 @media (min-width: 768px) {
-  footer .col-6 {
+  footer .col-sm-6 {
     margin-top: 5vw; } }
 footer img {
   display: block;
-  margin: auto;
-  width: 35%; }
+  margin: auto; }
+  @media (min-width: 0px) {
+    footer img {
+      width: 25%; } }
+  @media (min-width: 768px) {
+    footer img {
+      width: 35%; } }
 footer #logoText {
   display: block;
   margin: auto;
@@ -145,11 +150,12 @@ footer #socialMedia {
     display: inline-block; }
     @media (min-width: 0px) {
       footer #socialMedia img {
-        width: 30%;
-        margin: auto; } }
+        width: 20%;
+        margin: 0.2vw 40%; } }
     @media (min-width: 768px) {
       footer #socialMedia img {
         width: 25%;
+        margin: 0;
         margin-left: 0.3vw;
         margin-top: 0.2vw; } }
     @media (min-width: 992px) {
